@@ -55,9 +55,9 @@ python solve_problem_1.py --path_json '../../genetic_logic_synthesis/genetic_cir
 
 ### Results
 after 5 epochs for each circuit (training time of 5 minutes; more details below):  
-majority_netlist.json: ~91%  
-multiplexer_netlist.json: ~99%  
-rule_30_netlist.json: ~91%  
+majority_netlist.json: ~0.91  
+multiplexer_netlist.json: ~0.99  
+rule_30_netlist.json: ~0.91
 
 ### Note on the performance of the algorithm
 with 5 epochs, the algorithm should take approximately 5 minutes on a machine equivalent to a MacBook Pro (Retina, 13-inch, Early 2015) (Processor 2.7 GHz Intel Core i5, Memory 8 GB 1867 MHz DDR3).  
