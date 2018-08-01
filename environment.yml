@@ -1,0 +1,82 @@
+name: bda
+channels:
+- defaults
+dependencies:
+- ca-certificates=2018.03.07=0
+- certifi=2018.4.16=py36_0
+- libcxx=4.0.1=h579ed51_0
+- libcxxabi=4.0.1=hebd6815_0
+- libedit=3.1.20170329=hb402a30_2
+- libffi=3.2.1=h475c297_4
+- ncurses=6.1=h0a44026_0
+- openssl=1.0.2o=h26aff7b_0
+- pip=10.0.1=py36_0
+- python=3.6.6=hc167b69_0
+- readline=7.0=hc1231fa_4
+- setuptools=39.2.0=py36_0
+- sqlite=3.24.0=ha441bb4_0
+- tk=8.6.7=h35a86e2_3
+- wheel=0.31.1=py36_0
+- xz=5.2.4=h1de35cc_4
+- zlib=1.2.11=hf3cbc9b_2
+- pip:
+  - absl-py==0.3.0
+  - appnope==0.1.0
+  - backcall==0.1.0
+  - bleach==1.5.0
+  - decorator==4.3.0
+  - entrypoints==0.2.3
+  - evostra==2.5.2
+  - genetic-logic-synthesis==0.1
+  - h5py==2.8.0
+  - html5lib==0.9999999
+  - ipykernel==4.8.2
+  - ipython==6.5.0
+  - ipython-genutils==0.2.0
+  - ipywidgets==7.3.1
+  - jedi==0.12.1
+  - jinja2==2.10
+  - jsonschema==2.6.0
+  - jupyter==1.0.0
+  - jupyter-client==5.2.3
+  - jupyter-console==5.2.0
+  - jupyter-core==4.4.0
+  - keras==2.2.0
+  - keras-applications==1.0.2
+  - keras-preprocessing==1.0.1
+  - markdown==2.6.11
+  - markupsafe==1.0
+  - mistune==0.8.3
+  - nbconvert==5.3.1
+  - nbformat==4.4.0
+  - notebook==5.6.0
+  - numpy==1.15.0
+  - pandocfilters==1.4.2
+  - parso==0.3.1
+  - pexpect==4.6.0
+  - pickleshare==0.7.4
+  - prometheus-client==0.3.1
+  - prompt-toolkit==1.0.15
+  - protobuf==3.6.0
+  - ptyprocess==0.6.0
+  - pygments==2.2.0
+  - python-dateutil==2.7.3
+  - pyyaml==3.13
+  - pyzmq==17.1.0
+  - qtconsole==4.3.1
+  - scipy==1.1.0
+  - send2trash==1.5.0
+  - simplegeneric==0.8.1
+  - six==1.11.0
+  - tensorflow==1.5.0
+  - tensorflow-tensorboard==1.5.1
+  - terminado==0.8.1
+  - testpath==0.3.1
+  - tornado==5.1
+  - traitlets==4.3.2
+  - wcwidth==0.1.7
+  - webencodings==0.5.1
+  - werkzeug==0.14.1
+  - widgetsnbextension==3.3.1
+prefix: /Library/Frameworks/Python.framework/Versions/2.7/envs/bda
+
