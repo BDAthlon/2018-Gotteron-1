@@ -2,6 +2,7 @@ import sys
 import json
 import argparse
 import pickle
+import time
 import numpy as np
 
 import model as m
@@ -16,6 +17,8 @@ parser.add_argument('--path_library', type=str, help='Path to the  library')
 parser.add_argument('--name', type=str, help='Name to save the dict of your run')
 parser.add_argument('--n_epoch', type=int, help='The number of epoch to run the algorithm')
 args = parser.parse_args()
+
+start = time.time()
 
 # We define global var to
 # keep track of the best results
@@ -163,6 +166,10 @@ es = EvolutionStrategy(net.model.get_weights(),
 
 es.run(args.n_epoch)
 save_dict(args.path_json, args.name, verbose=True)
+done = time.time()
+elapsed = done - start
+print(f'elapsed time: {elapsed}')
+
 
 
 
