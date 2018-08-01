@@ -8,7 +8,9 @@ For the neural net, a LSTM network is used to output a sequence of elements. Giv
 
 To train the network, evolution strategies are used. In a few words, noise is added to the parameters of the neural network. Then, the net produces a given number of sequences to solve the given problem, which are scored according to the library provided for the BDAthlon. This score is then given back to the network to modifiy its parameters such that the score is increased.  
   
-The Python library [Keras](https://keras.io/) is used to create the neural net and [evostra](https://github.com/alirezamika/evostra) for the evolution strategies.
+The Python library [Keras](https://keras.io/) is used to create the neural net and [evostra](https://github.com/alirezamika/evostra) for the evolution strategies.  
+
+Note: [reinforcement learning with deep neural nets](https://deepmind.com/research/publications/playing-atari-deep-reinforcement-learning/) could also have be used here. However, to run this kind of training algorithm there is a huge need of computational power, namely at least one GPU. Thus, evolution strategies seemed to be more suited to get to a broader audience. Moreover, evoution strategies have proven to be effective (cf link above).  
 
 ### Prerequisites
 
