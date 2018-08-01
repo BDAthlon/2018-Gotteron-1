@@ -56,3 +56,8 @@ python solve_problem_1.py --path_json '../../genetic_logic_synthesis/genetic_cir
 ### Note on the performance of the algorithm
 with 5 epochs, the algorithm should take approximately 5 minutes on a machine equivalent to a MacBook Pro (Retina, 13-inch, Early 2015) (Processor 2.7 GHz Intel Core i5, Memory 8 GB 1867 MHz DDR3).  
 However, if you want/have the time to run the algorithm longer, you can increase the number of epochs.  
+
+Also, note that the time is displayed at the end of the script run. Moreover, the results are sotchastic. So, the solutions files with their corresponding score are just an example of results found after one run of 5 epochs for each circuits.
+
+#### Future work
+It would be very interesting to explore the use of transfer learning. Indeed, we can imagine that the features learning to solve a given circuit will be usefull to solve another circuit. Thus, this would potentially increased the results as well as diminishing the training time.
