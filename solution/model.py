@@ -11,7 +11,6 @@ class MODEL():
     def __init__(self, dim, library_data, path_json):        
         self.n_char = 20
         self.encoding_len = 20
-        self.maxlen = 20
         
         # dict to map the circuit element to char and int
         # those mapping are needed for the neural net

@@ -72,7 +72,7 @@ def get_reward(weights):
     """
     # n_samples is the number of samples 
     # sampled at each epoch
-    n_samples = 100
+    n_samples = 1000
     return get_score(n_samples, weights)
 
 def get_score_mapping(mapping_from_net, path):
@@ -139,7 +139,9 @@ def save_dict(path, name, verbose=True):
             gate['mapping'] = best_circuit[idx_map]
             idx_map +=1
     
-    with open(f'{name}.pickle', 'wb') as handle:
+    # we save the score along with the name of the run
+    score_str = str(round(best, 2))
+    with open(f'{name}_{score_str}.pickle', 'wb') as handle:
         pickle.dump(list_data, handle, protocol=pickle.HIGHEST_PROTOCOL)
     
 
