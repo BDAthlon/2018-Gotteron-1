@@ -53,11 +53,17 @@ Here is an example:
 python solve_problem_1.py --path_json '../../genetic_logic_synthesis/genetic_circuit_scoring/example/majority_mapping.json' --path_library '../../genetic_logic_synthesis/genetic_circuit_scoring/example/genetic_gate_library.json' --name majority --n_epoch 5
 ```
 
+### Results
+after 5 epochs for each circuit (training time of 5 minutes; more details below):  
+majority_netlist.json: ~91%  
+multiplexer_netlist.json: ~99%  
+rule_30_netlist.json: ~91%  
+
 ### Note on the performance of the algorithm
 with 5 epochs, the algorithm should take approximately 5 minutes on a machine equivalent to a MacBook Pro (Retina, 13-inch, Early 2015) (Processor 2.7 GHz Intel Core i5, Memory 8 GB 1867 MHz DDR3).  
 However, if you want/have the time to run the algorithm longer, you can increase the number of epochs.  
 
 Also, note that the time is displayed at the end of the script run. Moreover, the results are sotchastic. So, the solutions files with their corresponding score are just an example of results found after one run of 5 epochs for each circuits.
 
-#### Future work
+### Future work
 It would be very interesting to explore the use of transfer learning. Indeed, we can imagine that the features learning to solve a given circuit will be usefull to solve another circuit. Thus, this would potentially increased the results as well as diminishing the training time.
