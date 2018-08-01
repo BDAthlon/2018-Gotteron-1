@@ -62,10 +62,10 @@ multiplexer_netlist.json: ~0.99
 rule_30_netlist.json: ~0.91
 
 ### Note on the performance of the algorithm
-with 5 epochs, the algorithm should take approximately 5 minutes on a machine equivalent to a MacBook Pro (Retina, 13-inch, Early 2015) (Processor 2.7 GHz Intel Core i5, Memory 8 GB 1867 MHz DDR3).  
+With 5 epochs, the algorithm should take approximately 5 minutes on a machine equivalent to a MacBook Pro (Retina, 13-inch, Early 2015) (Processor 2.7 GHz Intel Core i5, Memory 8 GB 1867 MHz DDR3).  
 However, if you want/have the time to run the algorithm longer, you can increase the number of epochs.  
 
-Also, note that the time is displayed at the end of the script run. Moreover, the results are sotchastic (dictionnary are saved in solution/). So, the solutions files with their corresponding score are just an example of results found after one run of 5 epochs for each circuits.
+Also, note that the time is displayed at the end of the script run. Moreover, the results are sotchastic. So, the solutions files with their corresponding score are just an example of results found after one run of 5 epochs for each circuits (dictionnary for reported results are saved in solution/).
 
 ### Future work
 It would be very interesting to explore the use of [transfer learning](https://machinelearningmastery.com/transfer-learning-for-deep-learning/). Indeed, we can imagine that the features learned to solve a given circuit will be usefull to solve another circuit. Thus, this would potentially increased the results as well as diminishing the training time.
